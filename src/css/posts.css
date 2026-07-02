@@ -1,0 +1,46 @@
+/* Posts styles */
+.posts {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+}
+
+.post-title {
+    margin: 0 0 0.75rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #222;
+}
+
+.post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.post-content {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #333;
+}
+
+.post a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+    
