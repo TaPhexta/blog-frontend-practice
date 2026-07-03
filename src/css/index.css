@@ -96,8 +96,8 @@ ul.nav-links {
 ========================= */
 
 main {
-  padding-left: 25%;
   width: 70%;
+  margin: 0 auto; /* Center horizontally */
 }
 
 /* =========================
@@ -159,7 +159,7 @@ a:hover {
     width: 100%;
 
     /* Even spacing all around */
-    padding: 15%;
+    padding: 20px;
     box-sizing: border-box;
   }
 
@@ -288,5 +288,114 @@ a:hover {
     hyphens: auto;
 
     max-width: 100%;
+  }
+}
+
+/* =========================
+   FOOTER SECTION
+========================= */
+
+footer.footer {
+  background-color: #333; /* Same as header */
+  color: white;
+  margin-top: 20px;
+  padding: 30px 20px 10px 20px;
+}
+
+/* =========================
+   MAIN FOOTER CONTAINER
+   Holds the 3 footer columns
+========================= */
+
+.inner-footer-container {
+  display: flex;
+
+  /* Spread sections evenly */
+  justify-content: space-between;
+
+  /* Align content to top */
+  align-items: flex-start;
+
+  gap: 30px;
+
+  /* Allow shrinking properly */
+  flex-wrap: wrap;
+}
+
+/* =========================
+   FOOTER HEADINGS
+========================= */
+
+.footer h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER LINKS
+========================= */
+
+.footer a {
+  color: #87ceeb; /* Light blue */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   REMOVE DEFAULT LIST STYLING
+========================= */
+
+.social-links,
+.quick-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Spacing between list items */
+
+.social-links li,
+.quick-links li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   COPYRIGHT SECTION
+   Bottom footer text
+========================= */
+
+.footer > div:last-child {
+  text-align: center;
+
+  /* Small separator line */
+  border-top: 1px solid #555;
+
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+  .inner-footer-container {
+    /* Stack sections vertically */
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .inner-footer-container div {
+    /* Center each section */
+    text-align: center;
+  }
+  .footer {
+    text-align: center;
   }
 }

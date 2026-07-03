@@ -1,30 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+
     <title>About</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>About Me</h1>
+      <div class="header-container">
+        <img src="../images/logo.png" alt="Logo" class="logo" />
+        <h1>About me</h1>
         <nav class="nav-bar">
-            <ul>
-                <li><a href="src/index.html">Home</a></li>
-                <li><a href="src/pages/postsPage.html">Posts</a></li>
-                <li><a href="src/pages/about.html">About</a></li>
-                <li><a href="src/pages/contact.html">Contact</a></li>
-            </ul>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/postsPage.html">Posts</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
     <main>
-        <section>
-            <h2>My Story</h2>
-            <p>Welcome to my blog! I'm excited to share my thoughts and experiences with you.</p>
-        </section>
+      <section class="about-content">
+        <h2>My Story</h2>
+        <img src="../images/about.jpg" alt="About Image" class="about-image" />
+        <br />
+        <p>
+          Welcome to my blog! I'm excited to share my thoughts and experiences
+          with you. This page serves as a refresher activity to help me revise
+          HTML and CSS.
+        </p>
+        <p>
+          I'm a passionate web developer with a love for creating engaging and
+          user-friendly websites. When I'm not coding, you can find me exploring
+          new technologies, reading tech blogs, or enjoying a good book.
+        </p>
+        <p>
+          My journey in web development started a few years ago, and since then,
+          I've been continuously learning and improving my skills. I believe
+          that sharing knowledge is essential, and that's why I created this
+          blog—to connect with like-minded individuals and contribute to the web
+          development community.
+        </p>
+        <p>
+          Thank you for visiting my blog! I hope you find the content
+          informative and inspiring. Feel free to reach out to me through the
+          contact page if you have any questions or just want to say hello!
+        </p>
+      </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="inner-footer-container">
+        <div>
+          <h3>Contact Information</h3>
+          <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+          <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div>
+          <h3>Follow Me</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://twitter.com/yourprofile" target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/yourprofile" target="_blank"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/postsPage.html">Posts</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
         <p>&copy; 2024 My Blog. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

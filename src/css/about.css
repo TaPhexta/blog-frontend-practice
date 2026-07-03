@@ -1,0 +1,74 @@
+/* =========================
+   ABOUT PAGE SECTION
+   Styles only content unique
+   to about.html
+========================= */
+
+/* Main content section */
+.about-content {
+  padding: 20px 0;
+}
+
+/* =========================
+   ABOUT PAGE HEADING
+========================= */
+
+.about-content h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
+.about-image {
+  /* Center image */
+  display: block;
+  margin: 0 auto;
+
+  /* Responsive sizing */
+  width: 300px;
+  max-width: 100%;
+
+  /* Keep proportions */
+  height: auto;
+
+  /* Slight rounded corners */
+  border-radius: 10px;
+
+  margin-bottom: 25px;
+}
+
+/* =========================
+   ABOUT TEXT CONTENT
+========================= */
+
+.about-content p {
+  /* Better reading width */
+  max-width: 800px;
+
+  /* Center paragraph block */
+  margin: 0 auto 20px auto;
+
+  /* Better readability */
+  line-height: 1.8;
+
+  /* Align text nicely */
+  text-align: justify;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+  .about-image {
+    width: 220px;
+  }
+
+  main section p {
+    text-align: left;
+    line-height: 1.6;
+  }
+}
