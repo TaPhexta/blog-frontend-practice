@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Blog</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/index.css" />
   </head>
+
   <body>
+
     <header>
+      
+      <div class="header-container">
+      <img src="src/images/logo.png" alt="Logo" class="logo" />
       <h1>My Blog</h1>
-      <nav>
-        <ul>
+      <nav class="nav-bar">
+        <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="pages/postsPage.html">Posts</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="src/pages/postsPage.html">Posts</a></li>
+          <li><a href="src/pages/about.html">About</a></li>
+          <li><a href="src/pages/contact.html">Contact</a></li>
         </ul>
       </nav>
+      </div>
+
     </header>
+
     <main>
       <h2>Welcome to my Blog!</h2>
       <p>This is a simple paragraph on my website.</p>
@@ -54,7 +62,9 @@
       </section>
     </main>
     <footer class="footer">
+      <div>
       <p>&copy; 2024 My Blog. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
