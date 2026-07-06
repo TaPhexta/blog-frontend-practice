@@ -385,7 +385,7 @@ footer.footer {
   .inner-footer-container {
     /* Stack sections vertically */
     flex-direction: column;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     gap: 20px;
     text-align: center;

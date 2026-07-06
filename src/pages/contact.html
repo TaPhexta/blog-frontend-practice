@@ -9,30 +9,33 @@
   </head>
   <body>
     <header>
-      <h1>My Blog</h1>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/postsPage.html">Posts</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <img src="../images/logo.png" alt="Logo" class="logo" />
+        <h1>My Blog</h1>
+        <nav class="nav-bar">
+          <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./postsPage.html">Posts</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section>
         <div class="contact-form">
           <h2>Contact Form</h2>
           <form action="#" method="post">
-            <label for="name">Name:</label>
+            <label for="name">Name:</label><br />
             <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
+            <br /><br />
+            <label for="email">Email:</label><br />
             <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
+            <br /><br />
+            <label for="message">Message:</label><br />
             <textarea id="message" name="message" rows="5" required></textarea>
-
+            <br />
             <button type="submit">Send</button>
           </form>
         </div>
@@ -40,14 +43,16 @@
       <section class="contact-info">
         <div>
           <p>
-            You can reach me at: <br />
-            Email: <a href="mailto:example@email.com">example@email.com</a>.
-            Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>.
+            Alternatively, ou can reach me directly at: <br />
+            Email:
+            <a href="mailto:example@email.com">example@email.com</a>.<br />
+            Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>.<br />
+            Address: 1a Main Road, Big Town, Eastern Cape, South Africa
           </p>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="inner-footer-container">
         <div>
           <h3>Contact Information</h3>
@@ -77,10 +82,10 @@
         <div>
           <h3>Quick Links</h3>
           <ul class="quick-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/postsPage.html">Posts</a></li>
-            <li><a href="../pages/about.html">About</a></li>
-            <li><a href="../pages/contact.html">Contact</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./postsPage.html">Posts</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,47 @@
+.posts-container {
+  /* This turns on the grid system */
+  display: grid;
+
+  /* This automatically creates columns. 
+     minmax(300px, 1fr) means: "Make each card at least 300px wide. 
+     If there is extra space, divide it equally (1fr = 1 fraction)." */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  /* This adds space between the cards */
+  gap: 20px;
+
+  /* Adding a little space on the outside so it doesn't touch the screen edges */
+  padding: 20px;
+}
+
+.individual-postcard {
+  /* Gives the card a white background so it stands out against your page */
+  background-color: #ffffff;
+
+  /* The "breathing room" inside the card so text doesn't touch the edges */
+  padding: 20px;
+
+  /* Rounds the sharp corners slightly */
+  border-radius: 8px;
+
+  /* Creates the soft 3D drop shadow behind the card */
+  /* (Horizontal offset, Vertical offset, Blur radius, Color/Opacity) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Makes the hover animation smooth over 0.3 seconds */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  /* Adds a very faint outline just in case the background is also white */
+  border: 1px solid #eaeaeb;
+}
+
+/* This targets the card only when the user's mouse pointer is over it */
+.individual-postcard:hover {
+  /* Lifts the card up by 5 pixels */
+  transform: translateY(-5px);
+
+  /* Makes the shadow bigger and darker to match the "lifted" look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
